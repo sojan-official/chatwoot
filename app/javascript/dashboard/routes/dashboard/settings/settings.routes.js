@@ -7,6 +7,8 @@ import integrations from './integrations/integrations.routes';
 import labels from './labels/labels.routes';
 import profile from './profile/profile.routes';
 import reports from './reports/reports.routes';
+import contacts from './contacts/contacts.routes';
+import knowledge from './knowledge/knowledge.routes';
 import store from '../../../store';
 
 export default {
@@ -30,5 +32,7 @@ export default {
     ...labels.routes,
     ...profile.routes,
     ...reports.routes,
+    ...contacts.routes,
+    ...knowledge.routes,
   ],
 };

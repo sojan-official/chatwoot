@@ -23,6 +23,20 @@ export const getSidebarItems = accountId => ({
         toolTip: 'Conversation from all subscribed inboxes',
         toStateName: 'home',
       },
+      contact: {
+        icon: 'ion-android-people',
+        label: 'CONTACTS',
+        hasSubMenu: false,
+        toState: frontendURL(`accounts/${accountId}/contacts`),
+        toStateName: 'settings_account_contacts',
+      },
+      knowledge: {
+        icon: 'ion-briefcase',
+        label: 'KNOWLEDGE',
+        hasSubMenu: false,
+        toState: frontendURL(`accounts/${accountId}/knowledge`),
+        toStateName: 'settings_account_knowledge',
+      },
       report: {
         icon: 'ion-arrow-graph-up-right',
         label: 'REPORTS',
